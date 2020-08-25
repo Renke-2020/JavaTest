@@ -31,7 +31,7 @@ public class CsvReaderInjava {
         try (BufferedReader br = Files.newBufferedReader(pathToFile,
                 StandardCharsets.US_ASCII)) {
 
-            // read the first line from the text file
+            
             String line = br.readLine();
 
             

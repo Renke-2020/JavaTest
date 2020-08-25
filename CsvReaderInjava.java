@@ -10,13 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Simple Java program to read CSV file in Java. In this program we will read
- * list of books stored in CSV file as comma separated values.
- * 
- * @author WINDOWS 8
- *
- */
+
 public class CsvReaderInjava {
 
     public static void main(String... args) {

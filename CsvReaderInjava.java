@@ -20,7 +20,7 @@ import java.util.List;
 public class CsvReaderInjava {
 
     public static void main(String... args) {
-        List<Employee1> employees = readEmployeesFromCSV("employees.txt");
+        List<Employee1> employees = readEmployeesFromCSV("employees.csv");
 
         // let's print all the person read from CSV file
         for (Employee1 emp : employees) {

@@ -32,6 +32,15 @@ public class CsvReaderInjava {
 
             
             String line = br.readLine();
+            
+            Iterator itr=employees.iterator();  
+                while(itr.hasNext())
+                {
+                	if(((Employee1) itr.next()).getDept()=="A00")
+                	{
+                		System.out.println(itr.next());
+                	}
+                }
 
             
             while (line != null) {

@@ -8,6 +8,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.*;
+import java.util.*;
+
 
 
 public class CsvReaderInjava {
@@ -33,14 +36,21 @@ public class CsvReaderInjava {
             
             String line = br.readLine();
             
+            
+            List<Employee1>empWithDeptA00=employees.stream().filter(i->employee1.getDept()==A00).collectors.toList());
+            System.out.println(empWithDeptA00);
+            
+            
+            
             Iterator itr=employees.iterator();  
-                while(itr.hasNext())
-                {
+               while(itr.hasNext())
+               {
                 	if(((Employee1) itr.next()).getDept()=="A00")
                 	{
                 		System.out.println(itr.next());
                 	}
                 }
+                
 
             
             while (line != null) {

@@ -37,7 +37,7 @@ public class CsvReaderInjava {
             String line = br.readLine();
             
             
-            List<Employee1>empWithDeptA00=employees.stream().filter(i->employee1.getDept()==A00).collectors.toList());
+            List<Employee1>empWithDeptA00=employees.stream().filter(i->i.getDept()==A00).collectors.toList());
             System.out.println(empWithDeptA00);
             
             
